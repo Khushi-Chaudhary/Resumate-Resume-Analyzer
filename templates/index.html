@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ResuMate - Upload Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light d-flex align-items-center justify-content-center vh-100">
+
+    <div class="container text-center">
+        <h1 class="mb-4">📄 ResuMate</h1>
+        <p class="text-muted">Upload your resume and get instant feedback!</p>
+
+        <form action="/upload" method="POST" enctype="multipart/form-data" class="p-4 border rounded bg-white shadow-sm mx-auto" style="max-width: 500px;">
+            <div class="mb-3">
+                <input class="form-control" type="file" name="resume" accept=".pdf" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Analyze Resume</button>
+        </form>
+    </div>
+
+</body>
+</html>
